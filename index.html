@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13 - CSS Transitions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 40px 0;
+            transition: all 0.5s ease;
+            display: flex;
+            align-items: flex-start;
+            font-size: 20px;
+        }
+
+        /* Square 1 becomes longer */
+        .square1:hover {
+            width: 450px;
+        }
+
+        /* Square 2 becomes larger */
+        .square2:hover {
+            transform: scale(1.5);
+            transform-origin: top left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exercise 13 - CSS Transitions</h1>
+
+    <p>Hover over square 1: The square becomes longer.</p>
+    <div class="square square1">1</div>
+
+    <p>Hover over square 2: The square becomes larger.</p>
+    <div class="square square2">2</div>
+
+</body>
+</html>
